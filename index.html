@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitoramento de Equipamentos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Gestão Inteligente de Equipamentos</h1>
+  </header>
+
+  <main>
+    <section class="equipamentos">
+      <h2>Equipamentos por Laboratório</h2>
+      <label for="filtro-lab">Filtrar por laboratório:</label>
+<select id="filtro-lab" onchange="mostrarEquipamentos()">
+  <option value="">Todos</option>
+  <option value="Lab 1">Lab 1</option>
+  <option value="Lab 2">Lab 2</option>
+  <option value="Lab 3">Lab 3</option>
+</select>
+      <div id="lista-equipamentos">
+        <!-- Equipamentos aparecem aqui via JavaScript -->
+      </div>
+      <button onclick="adicionarEquipamento()">Adicionar Equipamento</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
